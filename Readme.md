@@ -108,7 +108,7 @@ describe('province', function() {
 * 책 내에서 소개하는  리팩터링 형식 안내
 
 # Chapter 06
-[코드 보기]('#')(Chapter 06 폴더 내 리팩터링 방식별로 나눔)
+[코드 보기](https://github.com/harrykim14/Refactoring-2nd-Edition/tree/master/Chapter06)(Chapter 06 폴더 내 리팩터링 방식별로 나눔)
 
 > **함수 추출하기 절차**
 
