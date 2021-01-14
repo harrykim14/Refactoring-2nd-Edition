@@ -16,9 +16,15 @@
 * [Chapter 07](#chapter-07): 캡슐화
 * [Chapter 08](#chapter-08): 기능 이동
 * [Chapter 09](#chapter-09): 데이터 조직화
+* [Chapter 10](#chapter-10): 조건부 로직 간소화
+
 
 ## Chapter 01
 [코드 보기](https://github.com/harrykim14/Refactoring-2nd-Edition/blob/master/Chapter01/01-3.%20logic%20wt%20class.js)
+
+<details markdown="chapter-01">
+<summary>챕터 내 자세한 내용 보기</summary>
+
 * 함수 추출하기 
     - 함수 및 변수는 명확한 이름으로 변경하기
     - 좋은 코드라면 하는 일이 명확히 드러나야하며 변수 이름은 커다란 역할을 함
@@ -33,9 +39,14 @@
 3. **함수 추출하기**로 별도 함수로 추출
 4. **변수 인라인하기**로 변수 제거
 
+</details>
 
 ## Chapter 02
-~코드 보기~ 예시 코드 없음
+예시 코드 없음
+
+<details markdown="chapter-02">
+<summary>챕터 내 자세한 내용 보기</summary>
+
 * **리팩터링** : 소프트웨어의 겉보기 동작은 그대로 유지한 채 코드를 이해하고 수정하기 쉽도록 내부 구조를 변경하는 기법
 
 > 리팩터링의 의미
@@ -66,8 +77,14 @@
 2. 자가 테스트 코드와 리팩터링을 묶어 **테스트 주도 개발**(TDD)라 하며 요구사항 변화에 빠르게 대응하고 안정적인 구조를 코드베이스에 심을 수 있다
 3. 리팩터링은 단기적으로 성능이 느려질 수도 있지만 튜닝하기 쉽게 만들기 때문에 결국 더 빠른 소프트웨어를 얻게 될 수 있다
 
-# Chapter 03
-~코드 보기~ 예시 코드 없음
+</details>
+
+## Chapter 03
+예시 코드 없음
+
+<details markdown="chapter-03">
+<summary>챕터 내 자세한 내용 보기</summary>
+
 > 리팩터링, 무엇을 해야 하는가?
 * 좋은 **이름** 정하기: 함수 선언 바꾸기, 변수 이름 바꾸기, 필드 이름 바꾸기 등
 * 반복되는 코드 줄이기: 함수 추출하기, 문장 슬라이드하기, 메서드 올리기 등
@@ -94,8 +111,14 @@
 * 서브클래스가 인터페이스를 따르지 않는지 주의하기
 * **주석이 필요하다 느끼면 주석이 필요없는 코드로 리팩터링 해본다**
 
-# Chapter 04
+</details>
+
+## Chapter 04
 [코드 보기](https://github.com/harrykim14/Refactoring-2nd-Edition/blob/master/Chapter04/Province.js)
+
+<details markdown="chapter-04">
+<summary>챕터 내 자세한 내용 보기</summary>
+
 > 테스트를 작성하기 가장 좋은 시점은 프로그래밍을 시작하기 전이다
 * 모카를 사용하여 테스트 코드를 작성(예시)
 ```
@@ -114,12 +137,17 @@ describe('province', function() {
 
 > 모든 버그를 잡아낼 수 없다는 생각으로 테스트를 작성하지 않는다면 대다수의 버그를 잡을 수 있는 기회를 날리는 셈이다.
 
-# Chapter 05
+</details>
+
+## Chapter 05
 
 * 책 내에서 소개하는  리팩터링 형식 안내
 
-# Chapter 06
-[코드 보기](https://github.com/harrykim14/Refactoring-2nd-Edition/tree/master/Chapter06)(Chapter 06 폴더 내 리팩터링 방식별로 나눔)
+## Chapter 06
+[코드 보기](https://github.com/harrykim14/Refactoring-2nd-Edition/tree/master/Chapter06)
+
+<details markdown="chapter-06">
+<summary>챕터 내 자세한 내용 보기</summary>
 
 > **함수 추출하기 절차**
 
@@ -203,8 +231,13 @@ export function setDefaultOwner(arg) { defaultOwner = arg; }
     * 옮길 때마다 테스트한다
 6. 첫 번째 단계 코드를 함수로 추출하면서 중간 데이터 구조를 반환하도록 만들기
 
-# Chapter 07
+</details>
+
+## Chapter 07
 [코드 보기](https://github.com/harrykim14/Refactoring-2nd-Edition/tree/master/Chapter07)
+
+<details markdown="chapter-07">
+<summary>챕터 내 자세한 내용 보기</summary>
 
 > **레코드 캡슐화하기 절차**
 1. 레코드를 담은 변수를 캡슐화한다
@@ -288,8 +321,13 @@ export function setDefaultOwner(arg) { defaultOwner = arg; }
 5. 기존 알고리즘과 새 알고리즘의 결과를 비교하는 테스트를 수행한다
     * 두 결과가 같을 때 까지 새 알고리즘을 테스트하고 디버깅한다
 
+</details>
+
 ## Chapter 08
-[코드 보기](#)
+[코드 보기](https://github.com/harrykim14/Refactoring-2nd-Edition/tree/master/Chapter08)
+
+<details markdown="chapter-08">
+<summary>챕터 내 자세한 내용 보기</summary>
 
 > **함수 옮기기 절차**
 1. 선택한 함수가 현재 컨텍스트에서 사용 중인 모든 요소를 살펴보고 함께 옮겨야 할 함수가 있는지 고려한다
@@ -358,7 +396,13 @@ export function setDefaultOwner(arg) { defaultOwner = arg; }
 * 더 이상 사용되지 않는 코드는 지운다
 * 혹시 다시 필요해질것 같다면 버전 관리 시스템에 저장해놓은 버전을 불러와 적용한다
 
+</details>
+
 ## Chapter 09
+[코드 보기](https://github.com/harrykim14/Refactoring-2nd-Edition/tree/master/Chapter09)
+
+<details markdown="chapter-09">
+<summary>챕터 내 자세한 내용 보기</summary>
 
 > **변수 쪼개기 절차**
 1. 변수를 선언한 곳과 값을 처음 대입하는 곳에서 변수 이름을 바꾼다
@@ -407,6 +451,64 @@ export function setDefaultOwner(arg) { defaultOwner = arg; }
         return mass * STANDARD_GRAVIRTY * height;
     }
 ```
+
+</details>
+
+## Chapter 10
+[코드 보기](https://github.com/harrykim14/Refactoring-2nd-Edition/tree/master/Chapter10)
+
+<details markdown="chapter-09">
+<summary>챕터 내 자세한 내용 보기</summary>
+
+> **조건문 분해하기**
+* 조건식과 그 조건식에 딸린 조건절 각각을 함수로 추출한다
+
+> **조건식 통합하기 절차**
+1. 해당 조건식들 모두에 부수효과가 없는지 확인한다
+2. 조건문 두 개를 선택하여 두 조건문의 조건식들을 논리 연산자로 결합한다
+3. 테스트한다
+4. 조건이 하나만 남을 때 까지 반복한다
+5. 하나로 합쳐진 조건식을 함수로 추출할지 고려해본다
+
+> **중첩 조건문을 보호 구문으로 바꾸기 절차**
+1. 교체해야 할 조건 중 가장 바깥 것을 선택하여 보호 구문으로 바꾼다
+2. 테스트한다
+3. 필요하다면 1~2 과정을 반복한다
+4. 모든 보호 구문이 같은 결과를 반환한다면 보호 구문들의 조건식을 통합한다
+
+> **조건부 로직을 다형성으로 바꾸기 절차**
+1. 다형적 동작을 표현하는 클래스들이 아직 없다면 만들어준다
+    * 적합한 인스턴스를 알아서 만들어 반환하는 팩터리 함수도 같이 만든다
+2. 호출하는 코드에서 팩터리 함수를 사용하게 한다
+3. 조건부 로직 함수를 슈퍼클래스로 옮긴다
+4. 서브클래스 중 하나를 선택하여 슈퍼클래스의 조건부 로직 메서드를 오버라이드한다
+    * 조건부 문장 중 선택된 서브클래스에 해당하는 조건절을 서브클래스 메서드로 복사하고 적절히 수정한다
+5. 같은 방식으로 각 조건절을 해당 서브클래스에서 메서드로 구현한다
+6. 슈퍼클래스 메서드에는 기본 동작 부분만 남긴다
+    * 슈퍼클래스가 추상 클래스여야 한다면 이 메서드를 추상으로 선언하거나 서브클래스에서 처리해야 함을 알리는 에러를 던진다
+
+> **특이 케이스 추가하기**
+1. 컨테이너에 특이 케이스인지를 검사하는 속성을 추가하고 false를 반환하게 한다
+2. 특이 케이스 객체를 만들고 특이 케이스인지 검사하는 속성만 포함하여 true를 반환하게 한다
+3. 클라이언트에서 특이 케이스인지를 검사하는 코드를 함수로 추출하여 모든 클라이언트가 값을 직접 비교하는 대신 방금 추출한 함수를 사용하도록 고친다
+4. 코드에 새로운 특이 케이스 대상을 추가하고 함수의 반환 값으로 받거나 변환 함수를 적용한다
+5. 특이 케이스를 검사하는 함수 본문을 수정하여 특이 케이스 객체의 속성을 사용하도록 한다
+6. 테스트한다
+7. 여러 함수를 클래스로 묶기나 여러 함수를 변환 함수로 묶기를 적용하여 특이 케이스를 처리하는 공통 동작을 새로운 요소로 옮긴다
+8. 특이 케이스 검사 함수를 이용하는 곳이 남아있다면 해당 함수를 인라인한다
+
+> **어서션 추가하기**
+* **"어서션이 실패했다는 건 프로그래머가 잘못했다는 뜻이다"**
+* 참이라고 가정하는 조건이 보이면 그 조건을 명시하는 어서션을 추가하여 디버깅 혹은 다른 개발자와 소통 수단으로 이용하자
+
+> **제어 플래그를 탈출문으로 바꾸기 절차**
+1. 제어 플래그를 사용하는 코드를 함수로 추출할지 고려한다
+2. 제어 플래그를 갱신하는 코드 각각을 적절한 제어문으로 바꾸고 바꿀 때 마다 테스트한다
+3. 모두 수정했다면 제어 플래그를 제거한다
+
+</details>
+
+<hr/>
 
 #### 주석
 * [주1](#chapter-02) : 도착했을때보다 깔끔하게 정돈하고 떠난다(챕터1.7)
